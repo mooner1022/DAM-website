@@ -4,7 +4,7 @@
   "description": "dam",
   "main": "server.ts",
   "scripts": {
-    "prestart": "tsc",
+    "prestart": "npm run tsc",
     "start": "nodemon ./src/js/server.ts"
   },
   "repository": {
