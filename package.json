@@ -2,10 +2,9 @@
   "name": "dam",
   "version": "1.0.0",
   "description": "dam",
-  "main": "server.ts",
+  "main": "server.js",
   "scripts": {
-    "prestart": "npm run tsc",
-    "start": "nodemon ./src/js/server.ts"
+    "start": "nodemon ./src/js/server.js"
   },
   "repository": {
     "type": "git",
