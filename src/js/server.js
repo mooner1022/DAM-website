@@ -12,6 +12,6 @@ app.use(express.static(srcPath));
 app.get('/', function (req, res) {
     res.sendFile(path.join(htmlPath, 'index.html'));
 });
-app.listen(8080, function () {
-    console.log('Express App on port 8080!');
+app.listen(443, function () {
+    console.log('Express App on port 443!');
 });

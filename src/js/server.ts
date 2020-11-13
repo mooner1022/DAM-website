@@ -14,6 +14,6 @@ app.get('/', (req : express.Request , res : express.Response) => { // 메인 페
     res.sendFile(path.join(htmlPath, 'index.html'));
 });
 
-app.listen(8080, () => { // 웹 시작
-    console.log('Express App on port 8080!');
+app.listen(443, () => { // 웹 시작
+    console.log('Express App on port 443!');
 });
