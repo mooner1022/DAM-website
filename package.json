@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/swjuno/DAM1.git"
   },
+  "engines":{
+    "node": "v15.0.1",
+    "npm": "7.0.3"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
