@@ -34,15 +34,11 @@ var firebaseConfig = {
     appId: "1:670681084026:web:785642c820ecd727b70bc3",
     measurementId: "G-QSTPY2T9HJ"
 };
-var currentPath = "";
 var fb = firebase.default;
 fb.initializeApp(firebaseConfig); // Firebase 시작
 var db = fb.firestore();
 var router = express.Router();
 // ... GET 요청 처리
-router.get('/freeboard', function (req, res) {
-    switchContent('free_board.html');
-});
 // ... POST 요청 처리
 router.post('/savecookie/:idToken', function (req, res) {
     res.cookie('idToken', req.params.idToken, {
@@ -99,17 +95,5 @@ router.post('/free_board/post/:title/:content/:writer', function (req, res) {
 function range(size, startAt) {
     if (startAt === void 0) { startAt = 0; }
     return __spread(Array(size).keys()).map(function (i) { return i + startAt; });
-}
-function switchContent(filename) {
-    if (filename == currentPath)
-        return;
-    var container = $('#main-container');
-    var duration = 200;
-    currentPath = filename;
-    container.fadeOut(duration, function () {
-        container.load('/html/' + filename, function () {
-            container.fadeIn(duration);
-        });
-    });
 }
 module.exports = router;
