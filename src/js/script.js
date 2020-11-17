@@ -3,21 +3,17 @@ var currentPath = "";
 jQuery(function () {
     console.log('ready');
     showLogo();
-    $(".button_menu").on('mouseover', function () {
+    $(".button_menu").on('mouseover',()=> {
         console.log('hover');
     });
-    $('#profile').on('click', function () {
+    $('#profile').on('click',()=> {
         location.href = '/html/mem_profile.html';
     });
-    $('#logo').on("click", function () {
+    $('#logo').on("click",()=> {
         location.href = '/html/index.html';
     });
-    $("#btn_owners").on('click', function () {
+    $("#btn_owners").on('click', ()=> {
         switchContent('DAMcreatorsintro.html');
-    });
-    $("#btn_board_free").on('click', function () {
-        //switchContent('free_board.html')
-        location.href = '/freeboard';
     });
 });
 function switchContent(filename) {

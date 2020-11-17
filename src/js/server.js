@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var express = require("express");
 var path = require('path');
 var app = express();
-var PORT = process.env.PORT;
+var PORT = process.env.PORT || 8080;
 var srcPath = __dirname + "/../";
 var htmlPath = path.join(srcPath, 'html');
 //app.use(cookieParser());

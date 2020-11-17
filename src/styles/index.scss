@@ -1,8 +1,12 @@
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
 /*@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);*/
 
-.blind { /* 스크린 리더에는 안보이는 클래스*/
+* {
+    font-family: 'Noto Sans KR';
+}
+
+.blind {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
@@ -143,7 +147,6 @@ nav ul{
     transition: 0.3s;
 }
 
-/* 드롭다운 메뉴... */
 .button_menu {
     height: 50px;
     width: 100%;
@@ -219,18 +222,10 @@ nav ul{
     height: 100%;
     width: 130px;
 }
-/* ...드롭다운 메뉴 */
 
 .div ~ span {
     height: 100%;
     margin: auto;
-}
-
-.maincontainer {
-    position: relative;
-    margin: 0 auto;
-    padding: 30px 20px;
-    width: 1180px;
 }
 
 .textcenter {

@@ -1,7 +1,7 @@
 import * as express from "express"
 const path = require('path');
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT||8080;
 
 let srcPath = `${__dirname}/../`;
 let htmlPath = path.join(srcPath, 'html');
